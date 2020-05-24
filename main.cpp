@@ -37,7 +37,7 @@ int main()
     std::cin >> timemount;
     if ( timemount.back() == 'h' ){
         timemount.pop_back();
-        std::cout << differencestimes(std::stoi(timemount)) << std::endl;
+        differencestimes(std::stoi(timemount));
     }else if( timemount.back() == 'm'){
         timemount.pop_back();
     }else if( timemount.back() == 's'){
