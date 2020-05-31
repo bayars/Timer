@@ -21,7 +21,7 @@
 #include <iomanip>
 #include <ctime>
 // #include <chrono>
-#include "src/hours.hpp"
+#include "src/countdown.hpp"
 
 // void systemclock(){
 //     std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
@@ -33,29 +33,19 @@
 int main()
 {
     std::string timemount;
-    std::cout << "Hours, Minute or second (like 2h): ";
+    std::cout << "Hours, Minute or second (like 1h for a hours, 1m for a minute ): ";
     std::cin >> timemount;
     if ( timemount.back() == 'h' ){
         timemount.pop_back();
-        differencestimes(std::stoi(timemount));
+        hourscountdown(std::stoi(timemount));
     }else if( timemount.back() == 'm'){
         timemount.pop_back();
+        minutecountdown(std::stoi(timemount));
     }else if( timemount.back() == 's'){
         timemount.pop_back();
+        secondcountdown(std::stoi(timemount));
     }else{
         std::cout << "You didn't give true format of time." << std::endl;
     }
-
-
-    // int i = 0;
-    // systemclock(); 
-    // std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
-    // while(i < 100000){
-    //     i++;
-    // }
-    // std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    // std::cout << "Printing took "
-    //           << std::chrono::duration_cast<std::chrono::microseconds>(end - start).count()
-    //           << "us.\n";
     return 0;
 }
