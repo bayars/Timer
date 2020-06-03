@@ -22,6 +22,7 @@
 #include <ctime>
 // #include <chrono>
 #include "src/countdown.hpp"
+// #include "qt/Timer/mainwindow.h"
 
 // void systemclock(){
 //     std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
@@ -30,8 +31,10 @@
 // }
 
 
-int main()
+int mains()
 {
+
+
     std::string timemount;
     std::cout << "Hours, Minute or second (like 1h for a hours, 1m for a minute ): ";
     std::cin >> timemount;
