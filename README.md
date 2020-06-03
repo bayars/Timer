@@ -6,6 +6,8 @@ I used chrono, ctime, iomanip and thread libraries for this program.
 
 ### Installation
 
+##### With g++
+
 Program compile just with that;
 
 ```
@@ -18,6 +20,25 @@ You can run with that command;
 ./Timer
 ```
 
+##### With cmake
+
+First you need to get project. If you haven't git program, you have to install on your system.
+
+```
+git clone https://github.com/rection/Timer
+```
+
+After that step, you can run this command.
+
+```
+make timer
+```
+
+And you have a Timer program you can run with
+
+```
+./Timer
+```
 
 ### Usage
 
