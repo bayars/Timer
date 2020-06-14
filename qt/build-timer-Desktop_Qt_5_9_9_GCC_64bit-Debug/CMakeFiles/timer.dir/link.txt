@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/timer.dir/main.cpp.o CMakeFiles/timer.dir/mainwindow.cpp.o CMakeFiles/timer.dir/timer_autogen/mocs_compilation.cpp.o  -o timer -Wl,-rpath,/home/safa/Qt/5.9.9/gcc_64/lib /home/safa/Qt/5.9.9/gcc_64/lib/libQt5Widgets.so.5.9.9 /home/safa/Qt/5.9.9/gcc_64/lib/libQt5Gui.so.5.9.9 /home/safa/Qt/5.9.9/gcc_64/lib/libQt5Core.so.5.9.9 
