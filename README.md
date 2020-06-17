@@ -37,3 +37,4 @@ Program running just in command line right now. I will set a graphical interface
 
 + Add command line parser for takes verbose output limit and on that way, I can add description and usage.
 + Set QT5 
++ The QT5 tried but qt has QTimer library and that will using in that project. That command line program will stay now. GUI may come with QTimer lib.

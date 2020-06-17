@@ -1,4 +1,4 @@
-#include "countdown.hpp"
+//#include "countdown.hpp"
 #include <ctime>
 #include <iostream>
 #include <thread>
@@ -20,15 +20,16 @@ int counter(int hours){
 
 // public set all methods inside this class methods.
 
-int secondcountdown(int second){
+std::string secondcountdown(int second){
     std::chrono::seconds s (second);
     std::chrono::seconds i (0);
     while (i <= s){
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        std::cout << std::chrono::seconds(s).count() << std::endl;
+//        std::cout << std::chrono::seconds(s).count() << std::endl;
         s--;
+        return std::to_string(std::chrono::seconds(s).count());
     }
-    return 0;
+    return "tel";
 }
 
 int minutecountdown(int minute){
